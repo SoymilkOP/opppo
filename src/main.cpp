@@ -268,7 +268,7 @@ void processFile(const std::string& filename, MovieContainer& container) {
 #include <windows.h>
 #endif
 
-int main(int argc, char* argv[]) {
+int main(int argc, const char* argv[]) {
 #ifdef _WIN32
     // Устанавливаем UTF-8 для консоли Windows
     SetConsoleOutputCP(65001);
