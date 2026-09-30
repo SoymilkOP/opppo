@@ -47,8 +47,6 @@ public:
     explicit Movie(const std::string& title) : title(title) {}
     virtual ~Movie() = default;
 
-    const std::string& getTitle() const { return title; }
-
     virtual std::string getType() const = 0;
     virtual void print(std::ostream& os) const = 0;
 
