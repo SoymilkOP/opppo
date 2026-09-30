@@ -95,7 +95,7 @@ void processFile(const std::string& filename, MovieContainer& container) {
     }
 }
 
-int main(int argc, char* const argv[]) {
+int main(int argc, const char* argv[]) {
 #ifdef _WIN32
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
