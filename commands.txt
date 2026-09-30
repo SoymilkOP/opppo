@@ -1,0 +1,18 @@
+ADD Feature "Интерстеллар" "Кристофер Нолан"
+ADD Cartoon "Холодное сердце" Drawn
+ADD Series "Игра престолов" "Дэвид Бениофф" 73
+ADD Feature "Начало" "Кристофер Нолан"
+ADD Cartoon "Коралина в Стране Кошмаров" StopMotion
+ADD Series "Чернобыль" "Йохан Ренк" 5
+ADD Cartoon "Валли" CGI
+
+PRINT
+
+REM type Feature
+PRINT
+
+REM title "Холодное сердце"
+PRINT
+
+REM method CGI
+PRINT
