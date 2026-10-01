@@ -1,0 +1,8 @@
+# Ignore archives
+*.rar
+
+# Ignore executables
+*.exe
+
+# Ignore Word documents
+*.docx
