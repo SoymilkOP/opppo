@@ -39,7 +39,9 @@ void processFile(const std::string& filename, MovieContainer& container) {
 
     while (std::getline(file, line)) {
         ++lineNum;
-        if (line.empty() || line[0] == '#') continue;
+        if (line.empty() || line[0] == '#') {
+            continue;
+        }
 
         std::istringstream iss(line);
         std::string command;
@@ -97,8 +99,9 @@ void processFile(const std::string& filename, MovieContainer& container) {
 
 int main(int argc, const char* argv[]) {
 #ifdef _WIN32
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);
+    constexpr UINT kUtf8CodePage = 65001;
+    SetConsoleOutputCP(kUtf8CodePage);
+    SetConsoleCP(kUtf8CodePage);
 #endif
 
     std::string filename = "commands.txt";
